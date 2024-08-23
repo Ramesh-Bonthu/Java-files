@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 public class PermAndComb {
-  public int fact(int n) {
-    int fac = 1;
+  public double fact(int n) {
+    double fac = 1;
     for (int i = n; i >= 1; i--) {
       fac = fac * i;
     }
@@ -19,11 +19,11 @@ public class PermAndComb {
     r = sc.nextInt();
     if (n >= r) {
       int nr = n - r;
-      int nFact = obj.fact(n);
-      int nrFact = obj.fact(nr);
-      int rFact = obj.fact(r);
+      double nFact = obj.fact(n);
+      double nrFact = obj.fact(nr);
+      double rFact = obj.fact(r);
       System.out.println(" permutations is " + nFact / nrFact);
-      int comb = rFact * nrFact;
+      double comb = rFact * nrFact;
       System.out.println(" Combinations is " + nFact / comb);
     } else {
       System.out.println(" N value is must be greater then R value");
